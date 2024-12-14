@@ -1,0 +1,123 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.header{
+	width: 100%;
+}
+
+.main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	
+}
+body {
+	line-height: 1;
+	background-size: cover;
+	background-repeat: no-repeat;
+	transition: all 1s linear;
+	background-attachment: fixed;
+}
+
+.estacion {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items:center;
+	width: 500px;
+	flex-wrap: wrap;
+	background-color: #ffffff75;
+	border: 3px solid #ffffff75;
+	border-radius: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	padding: 10px;
+}
+
+.tiempo-actual {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 10px;
+}
+
+.informacion {
+	display: flex;
+}
+.informacion-dia{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 50px;
+}
+
+.imagen-estacion {
+    width: 30px;
+}
+
+.lista-horas{
+	display: flex;
+	overflow-x: scroll;
+}
+
+.datos-hora{
+	display: flex;
+	flex-direction: column;
+}
+
+.lista-grados {
+	padding: 10px;
+}
+
+.flecha {
+	width: 30px;
+	filter: invert(1);
+	padding: 10px;
+}

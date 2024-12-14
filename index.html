@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Página Principal</title>
+</head>
+<body id="index">
+    <main class="main">
+        <section id="estacion-meteo" class="estacion-meteo">
+            <div id="estacion" class="estacion">
+                <div id="datos-meteo" class="datos-meteo"> 
+                </div>
+            </div>
+        </section>
+        <section id="reloj">
+        </section>
+        <section id="contraseñas">
+            <div id="generador-contraseñas" class="generador-contraseñas">
+                <h2>Genera tu contraseña segura</h2>
+                <input type="number" id="length" name="length" min="12" max="50" value="12">
+                <button type="button" id="botonpass" class="botonpass">Generar Contraseña</button>
+                <div id="resultado-contraseña"></div>
+            </div>
+        </section>
+        <section class="listado">
+            <div class="titulo-enlaces">
+                <h2>Añade tu enlace favorito</h2>
+            </div>
+            <div class="formulario-enlaces">
+                <input type="text" id="nombre-enlace" placeholder="Nombre de tu enlace" required>
+                <input type="text" id="url-enlace" placeholder="Pon aquí la url">
+                <button id="boton-enlace" class="boton-enlace">Agregar Enlace</button>
+            </div>
+            <ul id="listado-enlaces" class="listado-enlaces">
+
+            </ul>
+        </div>
+
+        </section>
+        <footer class="footer">
+            <nav class="menu-navegacion">
+                <a href="/reloj/index.html">
+                    <img src="./img/reloj.png"/>
+                </a>
+                <a href="/estacion/index.html">
+                    <img src="./img/nube.png"/>
+                </a>
+                <a href="/contraseñas/index.html">
+                    <img src="./img/candado.png"/>
+                </a>
+                <a href="/listado/index.html">
+                    <img src="./img/enlace.png"/>
+                </a>
+            </nav>
+
+        </footer>
+    </main>
+    <script src="js/contraseñas.js"></script>
+    <script src="js/estacion.js"></script>
+    <script src="js/reloj.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/listado.js"></script>
+</body>
+</html>
